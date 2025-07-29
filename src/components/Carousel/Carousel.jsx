@@ -1,31 +1,32 @@
-import React, {useState} from 'react';
-import './Carousel.css';
+import React, { useState, useEffect } from 'react';
+import './Carousel.css'; // Asegúrate de tener estilos si deseas
 
 const images = [
-    
-    '/Img/Car1.jpg',
-    '/Img/Car2.jpg',
-    '/Img/Car3.jpg',
+  '/Img/Car1.jpg',
+  '/Img/Car2.jpg',
+  '/Img/Car3.jpg',
 ];
-function Carousel(){
-    const[currentIndex, setCurrentIndex] = useState(0);
 
-    const nextSlide = () => {
-        setCurrentIndex((currentIndex + 1)% images.length);
-    };
+const waitTime = 3000; // 3 segundos
 
-    const prevSlide = () => {
-        setCurrentIndex((currentIndex - 1 + images.length)% images.length)
-    };
+function Carousel() {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-    return (
-        <div className="carousel">
-            <button onClick={prevSlide}>‹</button>
-            <img src={images[currentIndex]} alt="slide" />
-            <button onClick={nextSlide}>›</button>
-        </div>
-    );
-    
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        (prevIndex + 1) % images.length
+      );
+    }, waitTime);
+
+    return () => clearInterval(interval); // Limpieza al desmontar
+  }, []);
+
+  return (
+    <div className="carousel">
+      <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
+    </div>
+  );
 }
 
 export default Carousel;
