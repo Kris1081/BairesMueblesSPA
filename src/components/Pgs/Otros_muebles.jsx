@@ -1,5 +1,11 @@
+import Banner from "../Banner/Banner";
+import Categorias from "../Categorias/Categorias";
+
 function Otros_muebles() {
-  return <h2>Otros_muebles</h2>;
+  return (<main>
+    <Banner />,
+    <Categorias />
+  </main>);
 }
 
 export default Otros_muebles;

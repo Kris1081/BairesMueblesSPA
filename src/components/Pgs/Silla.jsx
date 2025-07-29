@@ -1,5 +1,11 @@
+import Banner from "../Banner/Banner";
+import Categorias from "../Categorias/Categorias";
+
 function Sillas() {
-  return <h2>Sillas</h2>;
+  return (<main>
+    <Banner/>,
+    <Categorias/>
+  </main>);
 }
 
 export default Sillas;

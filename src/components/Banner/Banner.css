@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.banner {
+  @apply h-[40vh] flex flex-col justify-center items-center text-center text-black bg-[url('/Img/banner.jpg')] bg-cover bg-center px-8;
+}
+
+.banner h2 {
+  @apply text-4xl mb-4 font-bold text-gray-800;
+}
+
+.banner p {
+  @apply text-xl text-gray-600 mb-6;
+}
+
+.banner a {
+  @apply inline-block bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-500 transition;
+}

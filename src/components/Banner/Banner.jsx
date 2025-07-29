@@ -1,0 +1,52 @@
+import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import './Banner.css';
+function Banner() {
+const { pathname } = useLocation();
+
+    const contentByRoute = {
+        '/fabricacion': {
+            title: 'Fabricación Artesanal',
+            text: 'Calidad y tradición en cada pieza',
+        },
+        '/muebles': {
+            title: 'Muebles de Calidad',
+            text: 'Diseños exclusivos para tu hogar',
+            buttonText: 'Regresar a Fabricación',
+            buttonLink: '/fabricacion',
+        },
+        '/silla': {
+            title: 'Sillas de Diseño',
+            text: 'Comodidad y estilo en cada asiento',
+            buttonText: 'Regresar a Fabricación',
+            buttonLink: '/fabricacion',
+        },
+        '/otros_muebles': {
+            title: 'Otras Piezas',
+            text: 'Muebles especiales y personalizados',
+            buttonText: 'Regresar a Fabricación',
+            buttonLink: '/fabricacion',
+        },
+    };
+
+    const { title, text, buttonText, buttonLink } = contentByRoute[pathname] || {
+        title: '',
+        text: '',
+    };
+
+    if (!title && !text) return null;
+
+    return (
+        <section className="banner">
+            <h2>{title}</h2>
+            <p>{text}</p>
+            {buttonText && buttonLink && (
+                <Link to={buttonLink} className="btn-banner">
+                    {buttonText}
+                </Link>
+            )}
+        </section>
+    );
+};
+
+export default Banner;

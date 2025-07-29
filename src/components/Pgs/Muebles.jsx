@@ -1,5 +1,10 @@
+import Banner from "../Banner/Banner";
+import Categorias from "../Categorias/Categorias";
 function Muebles() {
-  return <h2>Muebles de Baires Muebles</h2>;
+  return (<main>
+    <Banner/>,
+    <Categorias/>
+  </main>);
 }
 
 export default Muebles;
