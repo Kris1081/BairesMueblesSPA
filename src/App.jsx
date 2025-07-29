@@ -2,6 +2,7 @@ import { Outlet, Link } from 'react-router-dom';
 import './App.css';
 import LogoBM from './assets/imgs/LogoBM.jpg';
 
+
 function App() {
   return (
     <>
@@ -10,6 +11,7 @@ function App() {
         <div className="contenedor-logo">
           <img src={LogoBM} alt="Baires Muebles Logo" className="logo" />
           <h1>Baires Muebles</h1>
+          
         </div>
         <nav className="navbar">
           <ul className="nav">
