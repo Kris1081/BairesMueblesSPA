@@ -16,8 +16,7 @@ function App() {
         <nav className="navbar">
           <ul className="nav">
             <li><Link to="/">Inicio</Link></li>
-            <li><Link to="/">Fabricación</Link></li>
-            <li><Link to="/muebles">Muebles</Link></li>
+            <li><Link to="/fabricacion">Fabricación</Link></li>
             <li><Link to="/tapiceria">Tapicería</Link></li>
             <li><Link to="/contacto">Contacto</Link></li>
           </ul>
