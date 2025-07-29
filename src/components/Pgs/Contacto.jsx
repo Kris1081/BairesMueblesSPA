@@ -1,5 +1,11 @@
+import Contacti from "../Contacti/Contacti";
+
 function Contacto() {
-  return <h2>Contactanos a Baires Muebles</h2>;
+  return (
+  <>
+  <Contacti/>
+  </>
+  );
 }
 
 export default Contacto;
