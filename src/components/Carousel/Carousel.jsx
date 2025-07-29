@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Carousel.css'; // Asegúrate de tener estilos si deseas
+import './Carousel.css'; 
 
 const images = [
   '/Img/Car1.jpg',
@@ -7,7 +7,7 @@ const images = [
   '/Img/Car3.jpg',
 ];
 
-const waitTime = 3000; // 3 segundos
+const waitTime = 2500; 
 
 function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,7 +19,7 @@ function Carousel() {
       );
     }, waitTime);
 
-    return () => clearInterval(interval); // Limpieza al desmontar
+    return () => clearInterval(interval); 
   }, []);
 
   return (
