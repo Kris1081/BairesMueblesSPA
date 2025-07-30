@@ -70,6 +70,36 @@ body {
   background-color: #2b2b2b;
   color: #ccc;
   text-align: center;
-  padding: 20px 0;
+  padding: 40px 20px;
   border-top: 2px solid #444;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.footer-contenido {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.footer-text {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer-link {
+  color: #d1bfa7;
+  text-decoration: none;
+  margin: 0 8px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+.separator {
+  color: #666;
+  margin: 0 4px;
+}
+
