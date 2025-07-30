@@ -3,8 +3,8 @@ import Categorias from '../Categorias/Categorias';
 import Pasos from '../Pasos/Pasos'
 function Sillas_tapiceria() {
   return (<main>
-    <Banner />,
-    <Categorias />,
+    <Banner />
+    <Categorias />
     <Pasos />
   </main>)
 }

@@ -3,7 +3,7 @@ import Categorias from "../Categorias/Categorias";
 
 function Sofas() {
   return (<main>
-    <Banner/>,
+    <Banner/>
     <Categorias/>
   </main>);
 }

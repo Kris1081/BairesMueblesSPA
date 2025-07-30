@@ -2,7 +2,7 @@ import Banner from "../Banner/Banner";
 import Categorias from "../Categorias/Categorias";
 function Muebles() {
   return (<main>
-    <Banner/>,
+    <Banner/>
     <Categorias/>
   </main>);
 }

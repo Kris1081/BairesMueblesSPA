@@ -3,7 +3,7 @@ import Categorias from "../Categorias/Categorias";
 
 function Sillas() {
   return (<main>
-    <Banner/>,
+    <Banner/>
     <Categorias/>
   </main>);
 }
