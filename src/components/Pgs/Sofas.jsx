@@ -1,5 +1,11 @@
+import Banner from "../Banner/Banner";
+import Categorias from "../Categorias/Categorias";
+
 function Sofas() {
-  return <h2>Sofas</h2>;
+  return (<main>
+    <Banner/>,
+    <Categorias/>
+  </main>);
 }
 
 export default Sofas;

@@ -1,5 +1,12 @@
+import Banner from '../Banner/Banner';
+import Categorias from '../Categorias/Categorias';
+import Pasos from '../Pasos/Pasos'
 function Tapiceria() {
-  return <h2>Tapiceria</h2>;
+  return (<main>
+    <Banner />,
+    <Categorias />,
+    <Pasos />
+  </main>)
 }
 
 export default Tapiceria;

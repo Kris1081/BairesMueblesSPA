@@ -27,6 +27,28 @@ const { pathname } = useLocation();
             buttonText: 'Regresar a Fabricación',
             buttonLink: '/fabricacion',
         },
+        '/tapiceria':{
+            title: 'Servicios de Tapicería',
+            text: 'Renovamos y personalizamos tus muebles',
+        },
+        '/sofas':{
+            title: 'Sofás de Lujo',
+            text: 'Diseño y comodidad en tu sala',
+            buttonText: 'Regresar a Tapicería',
+            buttonLink: '/tapiceria',
+        },
+        '/sillas_tapiceria':{
+            title: 'Tapicería de Sillas',
+            text: 'Renueva tus sillas con nuestros servicios expertos',
+            buttonText: 'Regresar a Tapicería',
+            buttonLink: '/tapiceria',
+        },
+        '/otros_tapiceria':{
+            title: 'Otros Servicios de Tapicería',
+            text: 'Renovamos todo tipo de muebles tapizados',
+            buttonText: 'Regresar a Tapicería',
+            buttonLink: '/tapiceria',
+        }
     };
 
     const { title, text, buttonText, buttonLink } = contentByRoute[pathname] || {

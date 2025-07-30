@@ -121,6 +121,122 @@ function Categorias() {
         titulo: 'Baúl de Cedro',
         descripcion: 'Baúl artesanal con herrajes antiguos y aroma natural',
       },
+    ],
+    '/tapiceria': [
+      {
+        imagen: '/Img/ImgTap/sofatap.jpg',
+        titulo: 'Sofás',
+        descripcion: 'Tapizados en tejidos de alta resistencia y calidad',
+        enlace: '/sofas',
+      },
+      {
+        imagen: '/Img/ImgTap/sillatap.jpg',
+        titulo: 'Sillas',
+        descripcion: 'Renovación de asientos y respaldos',
+        enlace: '/sillas_tapiceria',
+      },
+      {
+        imagen: '/Img/ImgTap/otrotap.jpg',
+        titulo: 'Otros',
+        descripcion: 'Tapizados especiales para todo tipo de muebles',
+        enlace: '/otros_tapiceria',
+      },
+    ],
+    '/sofas': [
+      {
+        imagen: "/Img/ImgFab/sofa1.jpg",
+        titulo: "Sofá Chesterfield",
+        descripcion: "Tapizado en cuero genuino con detalles de botones",
+      },
+      {
+        imagen: "/Img/ImgFab/sofa2.jpg",
+        titulo: "Sofá Minimalista",
+        descripcion: "Diseño limpio con patas metálicas y tejido resistente",
+      },
+      {
+        imagen: "/Img/ImgFab/sofa3.jpg",
+        titulo: "Seccional en L",
+        descripcion: "Configurable con chaise lounge y reposabrazos",
+      },
+      {
+        imagen: "/Img/ImgFab/sofa4.jpg",
+        titulo: "Sillón Reclinable",
+        descripcion: "Mecanismo suave y soporte lumbar ajustable",
+      },
+      {
+        imagen: "/Img/ImgFab/sofa5.jpg",
+        titulo: "Sofá Tuxedo",
+        descripcion: "Alto respaldo y brazos rectos en terciopelo",
+      },
+      {
+        imagen: "/Img/ImgFab/sofa6.jpg",
+        titulo: "Sofá Nórdico",
+        descripcion: "Patas de madera clara y tejido de lino",
+      },
+    ],
+    '/sillas_tapiceria': [
+      {
+        imagen: '/Img/ImgTap/sillatap1.jpg',
+        titulo: 'Renovación Completa',
+        descripcion: 'Cambio total de tapicería, incluyendo asiento y respaldo',
+        detalles: [
+          'Selección de tejidos premium',
+          'Relleno de alta densidad',
+          'Acabados profesionales',
+        ],
+      },
+      {
+        imagen: '/Img/ImgTap/sillatap2.jpg',
+        titulo: 'Reparación Estructural',
+        descripcion: 'Refuerzo de estructura y mecanismos',
+        detalles: [
+          'Reparación de patas y soportes',
+          'Reemplazo de resortes y amarres',
+          'Ajuste de balance y estabilidad',
+        ],
+      },
+      {
+        imagen: '/Img/ImgTap/sillatap3.jpg',
+        titulo: 'Personalización',
+        descripcion: 'Diseño único para tus sillas',
+        detalles: [
+          'Patrones y colores a medida',
+          'Detalles decorativos especiales',
+          'Acabados exclusivos',
+        ],
+      }
+    ],
+    '/otros_tapiceria': [
+      {
+        imagen: '/Img/ImgTap/otrotap1.jpg',
+        titulo: 'Bancos y Puffs',
+        descripcion: 'Renovación completa de bancos, ottomanas y puffs',
+        detalles: [
+          'Cambio de relleno y tapizado',
+          'Refuerzo de estructura',
+          'Diseños personalizados',
+        ],
+      },
+      {
+        imagen: '/Img/ImgTap/otrotap2.jpg',
+        titulo: 'Cabeceros de Cama',
+        descripcion: 'Tapizado y renovación de cabeceros',
+        detalles: [
+          'Selección de tejidos y acolchados',
+          'Patrones y botonados decorativos',
+          'Instalación profesional',
+        ],
+      },
+      {
+        imagen: '/Img/ImgTap/otrotap3.jpg',
+        titulo: 'Sillones Antiguos',
+        descripcion: 'Restauración de sillones vintage y antiguos',
+        detalles: [
+          'Mantenimiento de la estructura original',
+          'Tejidos de época o modernos',
+          'Acabados artesanales',
+        ],
+      },
     ]
 
   };
@@ -131,13 +247,14 @@ function Categorias() {
 
   return (
     <section className="categorias">
-      {categorias.map(({ imagen, titulo, descripcion, enlace }) => (
+      {categorias.map(({ imagen, titulo, descripcion, enlace, detalles }) => (
         <CategoriaCard
           key={titulo}
           imagen={imagen}
           titulo={titulo}
           descripcion={descripcion}
           enlace={enlace}
+          detalles={detalles}
         />
       ))}
     </section>

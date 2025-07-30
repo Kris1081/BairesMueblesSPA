@@ -1,6 +1,12 @@
-
+import Banner from '../Banner/Banner';
+import Categorias from '../Categorias/Categorias';
+import Pasos from '../Pasos/Pasos'
 function Otros_tapiceria() {
-  return <h2>Otros_tapiceria</h2>;
+  return (<main>
+    <Banner />,
+    <Categorias />,
+    <Pasos />
+  </main>)
 }
 
 export default Otros_tapiceria;

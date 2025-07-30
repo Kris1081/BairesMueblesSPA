@@ -1,5 +1,12 @@
+import Banner from '../Banner/Banner';
+import Categorias from '../Categorias/Categorias';
+import Pasos from '../Pasos/Pasos'
 function Sillas_tapiceria() {
-  return <h2>Sillas_tapiceria</h2>;
+  return (<main>
+    <Banner />,
+    <Categorias />,
+    <Pasos />
+  </main>)
 }
 
 export default Sillas_tapiceria;
