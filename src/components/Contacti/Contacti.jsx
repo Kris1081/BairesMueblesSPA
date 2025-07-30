@@ -1,4 +1,6 @@
 import React from 'react';
+import './contacti.css';
+
 
 function Contacti() {
   return (

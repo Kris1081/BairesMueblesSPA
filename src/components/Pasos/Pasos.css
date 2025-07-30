@@ -1,12 +1,13 @@
 @import "tailwindcss";
+
 /* Pasos.css */
 
 .proceso-section {
-  @apply bg-yellow-50 py-16 px-5 text-center;
+  @apply bg-[#1f1f1f] py-16 px-5 text-center;
 }
 
 .proceso-titulo {
-  @apply text-2xl mb-12 text-gray-700;
+  @apply text-2xl mb-12 text-gray-100;
 }
 
 .pasos-flex {
@@ -14,21 +15,21 @@
 }
 
 .paso-card {
-  @apply bg-white p-6 rounded-lg shadow-md flex flex-col items-center flex-shrink-0;
+  @apply bg-[#2b2b2b] p-6 rounded-lg shadow-md flex flex-col items-center flex-shrink-0 text-white;
   width: 90%;
-  max-width: 20rem; /* 320px */
+  max-width: 20rem;
 }
 
 @media (min-width: 640px) {
   .paso-card {
-    @apply w-48; /* 192px */
+    @apply w-48;
     max-width: unset;
   }
 }
 
 @media (min-width: 1024px) {
   .paso-card {
-    @apply w-56; /* 224px */
+    @apply w-56;
   }
 }
 
@@ -37,9 +38,9 @@
 }
 
 .paso-numero {
-  @apply inline-block w-10 h-10 bg-yellow-200 text-black font-bold rounded-full leading-10 mb-4 text-center;
+  @apply inline-block w-10 h-10 bg-yellow-500 text-black font-bold rounded-full leading-10 mb-4 text-center;
 }
 
 .paso-titulo {
-  @apply text-lg mb-2 text-gray-700;
+  @apply text-lg mb-2 text-gray-200;
 }

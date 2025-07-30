@@ -31,7 +31,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="faq">
+    <section className="faq mt-0">
       <h2>Preguntas Frecuentes: </h2>
       {faqs.map((faq, index) => (
         <div className="faq-item" key={index}>

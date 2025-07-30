@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+section {
+  @apply bg-[#1f1f1f] text-white py-16 px-6;
+}
+
+section > div {
+  @apply max-w-4xl mx-auto;
+}
+
+h2 {
+  @apply text-3xl font-bold mb-8 text-gray-200;
+  text-align: center;
+}
+
+iframe {
+  @apply w-full rounded-lg shadow-lg mb-8 border-0;
+  height: 300px;
+}
+
+div > p {
+  @apply mb-4 text-gray-300;
+  font-size: 1.125rem; /* 18px */
+}
+
+strong {
+  @apply text-yellow-400;
+}

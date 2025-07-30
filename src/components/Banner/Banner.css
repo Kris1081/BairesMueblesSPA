@@ -1,17 +1,19 @@
 @import "tailwindcss";
 
 .banner {
-  @apply h-[40vh] flex flex-col justify-center items-center text-center text-black bg-[url('/Img/banner.jpg')] bg-cover bg-center px-8;
+  @apply h-[40vh] flex flex-col justify-center items-center text-center bg-[url('/Img/banner.jpg')] bg-cover bg-center px-8;
 }
 
 .banner h2 {
-  @apply text-4xl mb-4 font-bold text-gray-800;
+  @apply text-4xl mb-4 font-bold text-white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 .banner p {
-  @apply text-xl text-gray-600 mb-6;
+  @apply text-xl text-white mb-6;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 .banner a {
-  @apply inline-block bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-500 transition;
+  @apply inline-block bg-gray-700 text-white font-semibold py-2 px-4 rounded hover:bg-gray-600 transition;
 }

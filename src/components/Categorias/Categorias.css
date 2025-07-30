@@ -13,15 +13,15 @@
 }
 
 .categoria-info {
-  @apply p-6;
+  @apply text-xl mb-4 text-black;
 }
 
 .categoria-info h3 {
-  @apply text-xl mb-2 text-gray-800;
+  @apply text-xl mb-2 text-black;
 }
 
 .categoria-info p {
-  @apply mb-4 text-gray-600;
+  color: black !important;
 }
 
 .btn {
