@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f5f5dc; 
-  color: #333;
+  background-color: #2e2e2e; /* gris oscuro suave */
+  color: #e0e0e0; /* texto claro suave */
 }
 
 .container {
@@ -11,9 +11,8 @@ body {
   padding: 0 20px;
 }
 
-
 .header {
-  background-color: #e49f274a; 
+  background-color: #3b3b3b; /* gris más claro que el fondo */
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -35,9 +34,10 @@ body {
 
 .titulo {
   font-size: 1.5rem;
-  color: #5a4636; 
+  color: #d1bfa7; /* tono cálido beige claro */
   font-weight: bold;
 }
+
 .header h1 {
   margin: 0;
 }
@@ -52,25 +52,24 @@ body {
 
 .nav li a {
   text-decoration: none;
-  color: #5a4636;
+  color: #d1bfa7;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .nav li a:hover {
-  color: #a67c52;
+  color: #f0d9b5; /* beige claro */
 }
-
 
 .main {
   padding: 40px 0;
   min-height: 70vh;
 }
 
-
 .footer {
-  background-color: #e6decf;
-  color: #5a4636;
+  background-color: #3a3a3a;
+  color: #d1bfa7;
   text-align: center;
   padding: 20px 0;
-  border-top: 2px solid #c5bca5;
+  border-top: 2px solid #5c5c5c;
 }
