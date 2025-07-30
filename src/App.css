@@ -9,19 +9,19 @@ body {
 }
 
 .header {
-  @apply bg-[#2a2a2a] p-5 flex justify-between items-center;
+  @apply bg-[#3a3a3a] p-5 flex justify-between items-center shadow-md fixed top-0 w-full z-50;
 }
 
 .logo-container {
-  @apply flex items-center;
+  @apply flex items-center gap-4; 
 }
 
 .logo {
-  @apply w-16 h-16 rounded-full object-cover mr-4;
+  @apply w-16 h-16 rounded-full object-cover;
 }
 
 .titulo {
-  @apply text-[1.5rem] text-[#f5d7a3] font-bold;
+  @apply text-[1.8rem] text-[#f5d7a3] font-extrabold tracking-wide;
 }
 
 .header h1 {
@@ -33,11 +33,11 @@ body {
 }
 
 .nav li a {
-  @apply no-underline text-[#f5d7a3] font-bold transition-colors duration-300 hover:text-[#a3c4f5];
+  @apply no-underline text-white font-bold transition-colors duration-300 hover:text-[#f5d7a3];
 }
 
 .main {
-  @apply py-10 min-h-[70vh];
+  @apply py-10 min-h-[70vh] mt-[120px];
 }
 
 .footer {
@@ -58,4 +58,8 @@ body {
 
 .separator {
   @apply text-[#666] mx-1;
+}
+
+.titulo-logo {
+  @apply text-[2rem] text-[#f5d7a3] font-extrabold leading-none tracking-wide;
 }

@@ -6,9 +6,9 @@ function App() {
   return (
     <>
       <header className="header">
-        <div className="contenedor-logo">
+        <div className="logo-container">
           <img src={LogoBM} alt="Baires Muebles Logo" className="logo" />
-          <h1>Baires Muebles</h1>
+          <h1 className="titulo-logo">Baires Muebles</h1>
         </div>
         <nav className="navbar">
           <ul className="nav">
