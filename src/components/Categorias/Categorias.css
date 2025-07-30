@@ -4,6 +4,10 @@
   @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-5 py-16 bg-[#fdf6f0];
 }
 
+.categorias p{
+  @apply text-gray-800
+}
+
 .categoria-card {
   @apply bg-white rounded-lg overflow-hidden shadow-md transition-transform hover:-translate-y-2 duration-300;
 }
