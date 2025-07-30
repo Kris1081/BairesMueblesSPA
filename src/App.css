@@ -1,105 +1,63 @@
+@import "tailwindcss";
+
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #1f1f1f; 
-  color: #f0f0f0; 
+  @apply m-0 bg-[#1f1f1f] text-[#f0f0f0];
 }
 
 .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
+  @apply max-w-[1100px] mx-auto px-5;
 }
 
 .header {
-  background-color: #2a2a2a; 
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @apply bg-[#2a2a2a] p-5 flex justify-between items-center;
 }
 
 .logo-container {
-  display: flex;
-  align-items: center;
+  @apply flex items-center;
 }
 
 .logo {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 15px;
+  @apply w-16 h-16 rounded-full object-cover mr-4;
 }
 
 .titulo {
-  font-size: 1.5rem;
-  color: #f5d7a3; 
-  font-weight: bold;
+  @apply text-[1.5rem] text-[#f5d7a3] font-bold;
 }
 
 .header h1 {
-  margin: 0;
+  @apply m-0;
 }
 
 .nav {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-  margin-top: 10px;
+  @apply list-none p-0 flex gap-5 mt-2;
 }
 
 .nav li a {
-  text-decoration: none;
-  color: #f5d7a3; 
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.nav li a:hover {
-  color: #a3c4f5; 
+  @apply no-underline text-[#f5d7a3] font-bold transition-colors duration-300 hover:text-[#a3c4f5];
 }
 
 .main {
-  padding: 40px 0;
-  min-height: 70vh;
+  @apply py-10 min-h-[70vh];
 }
 
 .footer {
-  background-color: #2b2b2b;
-  color: #ccc;
-  text-align: center;
-  padding: 40px 20px;
-  border-top: 2px solid #444;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  @apply bg-[#2b2b2b] text-[#ccc] text-center py-10 px-5 border-t-2 border-[#444];
 }
 
 .footer-contenido {
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.8;
+  @apply max-w-[800px] mx-auto leading-7;
 }
 
 .footer-text {
-  margin-bottom: 10px;
-  font-size: 16px;
+  @apply mb-2 text-[16px];
 }
 
 .footer-link {
-  color: #d1bfa7;
-  text-decoration: none;
-  margin: 0 8px;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.footer-link:hover {
-  color: #ffffff;
+  @apply text-[#d1bfa7] no-underline mx-2 font-semibold transition-colors duration-300 hover:text-white;
 }
 
 .separator {
-  color: #666;
-  margin: 0 4px;
+  @apply text-[#666] mx-1;
 }
+
 
